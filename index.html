@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>split bill style changed</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Dancing+Script&family=EB+Garamond:wght@600&family=Kaushan+Script&family=Montserrat&family=Roboto:wght@400;700&family=Signika+Negative&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="center">
+<div id="container">
+        <h1>Bill calculator</h1>
+<form>
+        <p>💲 How much?</p>
+        <input type="text" placeholder="add the total.." id="bill">
+
+        <p> How many?</p>
+        <input type="text" placeholder="add the number of people..." id="people">
+
+        <p>🤍Feeling generous?</p>
+        <button id="addTip">Add a tip</button>
+
+        <select id="tip">
+        <option disabled>Select an option</option>
+        <option value="0.30">Wow!30%</option>
+        <option value="0.20">Good service!20%</option>
+        <option value="0.10">It was okay!10%</option>
+        <option value="0.00">No tips!</option>
+        </select>
+        <button id="btn">Calculate</button>
+    </form>
+<!-- Блоки -->
+    <div id="showTotalAmountToPay">
+
+        <div id="billSplit">
+            <p>Bill</p>
+            <span>$</span>
+            <span id="divideBill"></span>
+            <span>Per Person</span>
+        </div>
+
+        <div id="totalTip">
+            <p>Tip</p>
+            <span>$</span>
+            <span id="divideTip"></span>
+            <span>Per Person</span>
+        </div>
+
+        <div id="totalAmount">
+            <p>Total</p>
+            <span>$</span>
+            <span id="billAndTip"></span>
+            <span>Per Person</span>
+        </div>
+    </div>
+    </div>
+</div>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</body>
+</html>
